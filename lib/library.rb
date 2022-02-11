@@ -3,7 +3,7 @@
 class Library
 attr_reader :books
 
-  def initilize
+  def initialize
  
    @books = [] 
   end

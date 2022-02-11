@@ -1,4 +1,5 @@
 require_relative '../lib/library.rb'
+require_relative '../lib/books.rb'
 
 describe Library do
   describe "when initializing" do
@@ -7,6 +8,7 @@ describe Library do
     end
     
     it "should add a book to the library shelf" do
+      book = Books.new(:title, :author)
       subject.add_book(book)
         expect(subject.books).to eq [book]
     end 
