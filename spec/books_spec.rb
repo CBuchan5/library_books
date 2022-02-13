@@ -15,17 +15,10 @@ subject{described_class.new('Star of Kazan', 'Eva Ibbitsom')}
     it "should say whether a book is damaged" do
     expect(subject).not_to be_damaged
     end 
- 
-   
+
+    it "should raise an error if the book is damaged" do
+    expect{ subject.damaged? }.to raise_error "Book is damaged"
+    end        
+  
 end 
 
-# first need to test for a book class
-# then using irb use a method for title give a book a titile 
-# eg book.title(name)
-# and then author
-# create methods for them within the book class
-# perhaps make book class as a select method so as not to have to do 'book = Book.new each time'
-# create a test to then get the name of the book 
-# another for the author
-# make an initialize method for both author and title
-# I would like a book to have a title and an author
