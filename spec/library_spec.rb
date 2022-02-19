@@ -10,10 +10,10 @@ describe Library do
     it "should add a book to the library shelf" do
       book = Books.new(:title, :author)
       subject.add_book(book)
-        expect(subject.books).to eq [book]
+      expect(subject.books).to eq [book]
     end 
   end 
-      
+ end     
   # describe 'add_book' do   
 
  
@@ -24,4 +24,3 @@ describe Library do
   #   expect(subject.books(1)).to be_empty
   #   end    
   # end
-end
